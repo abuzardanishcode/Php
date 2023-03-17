@@ -1,0 +1,12 @@
+#modal{
+  color: red;
+  width: 200px;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  /* display: none; */
+}
+.modal-form{
+  z-index: 1;
+  width: 100%;
+}

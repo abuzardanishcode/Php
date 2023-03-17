@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loginSignUp.css">
+</head>
+<body>
+    <div class="conatiner">
+    <form action="form.php" name="myForm"  id="SignUp"  method="post" autocomplete="off">
+        <!-- <form action="login.html" class="form formHie" id="signIn"> -->
+            <h1 class="form_title">Create Account</h1>
+            <div class="message  errorMessage">Incorrect User name or pass Word</div>
+         
+            <div class="inputFieldsName">
+                <input type="text" name="fname" class="inputText fname" id="fname" autofocus placeholder="Enter Your First Name">
+                <input type="text" name="Sname" class="inputText Sname" id="Sname" autofocus placeholder="Enter Your Last Name">
+                <!-- <div class="inputError">False Name </div> -->
+                <?php echo $nameErr;?>
+             </div>
+
+            <div class="inputFields">
+               <input type="email" class="inputText" id="email" title=$emaillErr name="email" autofocus placeholder="Enter Your E-mail">
+              
+               <!-- <?php echo $emailErr;?> -->
+               <!-- <div class="inputError">False Name </div> -->
+            </div>
+           
+            <div class="inputFields">
+               <input type="password" name="myPass" id="ConfirmPassword" class="inputText" autofocus placeholder="Confirm Your PassWord">
+               <!-- <?php echo $passwordErr;?> -->
+               <!-- <div class="inputError">PassWord is Incorrect </div> -->
+            </div>
+
+            <div class="inputFields">
+                <input type="password" name="cPass" id="ConfirmPassword" class="inputText" autofocus placeholder="Confirm Your PassWord">
+                <?php echo $cPassErr;?>
+                <!-- <div class="inputError">PassWord is Incorrect </div> -->
+             </div>
+
+             <button class="button" >
+               Create Accoount
+             </button>
+            <!-- <p class="fromlink">
+               <a href="" class="link">Forget your Password</a>
+            </p> -->
+
+            <p class="fromlink">
+               <a id="Already_have_account" href="login.html" class="link">Already have an account?</a>
+            </p>
+
+       </form>
+    </form>
+</div>
+
+
+<!-- <script src="logInSignUp.js"></script> -->
+</body>
+</html>

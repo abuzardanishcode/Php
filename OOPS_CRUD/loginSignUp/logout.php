@@ -1,0 +1,21 @@
+<?php
+ include 'partials/_nav.php';
+ 
+ session_start();
+ session_unset();
+ session_destroy();
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align='center'>You are log out from your page click here for login again</h1>
+   <h6 align='center'>  <a  href="myLogin.php" target="" rel="noopener noreferrer">Login</a></h6>
+</body>
+</html>

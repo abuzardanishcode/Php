@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="loginSignUp.css">
+   
+</head>
+<body>
+    <div class="conatiner">
+   
+<!-- </div>
+</div> -->
+<div class="login">
+   <form action="login.php" name="m" class="form " id="logIn"
+    method="post">
+        <h1 class="form_title">Log In</h1>
+        <!-- <div class="message  errorMessage">Incorrect User name or pass Word</div> -->
+     
+     
+        <div class="for_inputFields ">
+           <input type="text" name="email" class="inputText name" id="emailIn" autofocus placeholder="Username or email">
+           <!-- <div class="inputError">False Name </div> -->
+           <span class="error"><?php echo $nameErr;?></span>
+        </div>
+       
+        <div class="inputFields">
+           <input type="password" name="myPass" class="inputText" id="passwordIn" autofocus placeholder="Enter Your PassWord">
+           <i class="eye-icon"></i>
+           
+           <!-- <div class="inputError">PassWord is Incorrect </div> -->
+        </div>
+         <button class="button" onclick="logIn">
+           Log In
+         </button>
+         <!-- <input type="submit" value="S"> -->
+        <p class="fromlink">
+           <a href="" class="link">Forget your Password</a>
+        </p>
+
+        <p class="fromlink">
+           <a id="createAcount" href="signUp.html" class="link">Don't have an account? Create account</a>
+        </p>
+   </form>
+ </div>
+  
+
+    </div>
+    <!-- <script src="logInSignUp.js"></script> -->
+</body>
+</html>
